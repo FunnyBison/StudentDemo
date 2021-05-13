@@ -1,0 +1,27 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingRight="10px">
+
+    <EditText
+        android:id="@+id/et"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/serchbutton_bg"
+        android:hint="请输入关键字"
+        android:singleLine="true"
+        >
+    </EditText>
+
+    <ImageButton
+        android:id="@+id/ib"
+        android:layout_width="35px"
+        android:layout_height="35px"
+        android:layout_alignRight="@+id/et"
+        android:layout_centerVertical="true"
+        android:layout_margin="5px"
+        android:background="@mipmap/erro"
+        android:visibility="gone"/>
+
+</RelativeLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.chenantao.autolayout.AutoLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="74px"
+    app:layout_auto_basewidth="height"
+    app:layout_auto_baseheight="width"
+
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+
+    android:background="@color/colorPrimary"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:scaleType="fitXY"
+        android:layout_width="75px"
+        android:layout_height="60px"
+        android:layout_marginTop="5px"
+        android:layout_marginBottom="5px"
+        android:src="@mipmap/logo"
+        android:layout_marginLeft="30px"/>
+    
+    <Button
+        android:id="@+id/search_btn"
+        android:layout_weight="1"
+        android:layout_marginTop="10px"
+        android:layout_width="367px"
+        android:background="@drawable/serchbutton_bg"
+        android:hint="请输入关键字"
+        android:gravity="left|center_vertical"
+        android:drawableRight="@mipmap/speech_recognition"
+        android:layout_marginLeft="30px"
+        android:paddingRight="30px"
+        android:layout_height="50px"/>
+    
+    <ImageButton
+        android:id="@+id/caera_btn"
+        android:layout_marginTop="5px"
+        android:layout_marginLeft="10px"
+        android:src="@drawable/camera"
+        android:layout_marginRight="10px"
+        android:scaleType="fitXY"
+        android:layout_width="70px"
+        android:layout_height="60px"/>
+
+</com.chenantao.autolayout.AutoLinearLayout>

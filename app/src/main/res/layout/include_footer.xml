@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.chenantao.autolayout.AutoLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="74px"
+    app:layout_auto_basewidth="height"
+    app:layout_auto_baseheight="width"
+    android:background="@mipmap/background_footer"
+    android:orientation="horizontal">
+
+    <RadioGroup
+        android:id="@+id/group"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/home"
+            android:layout_weight="1"
+            android:layout_width="118px"
+            android:layout_height="match_parent"
+            android:button="@null"
+            android:drawableTop="@mipmap/home"
+            android:checked="true"
+            android:background="@drawable/home_seceted"
+            android:gravity="center"
+            android:text="首页"
+            android:textSize="23px"
+            android:textColor="#fff"/>
+
+        <RadioButton
+            android:id="@+id/search"
+            android:layout_weight="1"
+            android:layout_width="118px"
+            android:layout_height="match_parent"
+            android:button="@null"
+            android:background="@drawable/home_seceted"
+            android:drawableTop="@mipmap/search"
+            android:gravity="center"
+            android:text="搜索"
+            android:textSize="23px"
+            android:textColor="#fff"/>
+
+        <RadioButton
+            android:id="@+id/sort"
+            android:layout_weight="1"
+            android:layout_width="118px"
+            android:layout_height="match_parent"
+            android:button="@null"
+            android:background="@drawable/home_seceted"
+            android:drawableTop="@mipmap/list"
+            android:gravity="center"
+            android:textSize="23px"
+            android:text="分类"
+            android:textColor="#fff"/>
+
+        <RadioButton
+            android:id="@+id/cart"
+            android:layout_weight="1"
+            android:layout_width="118px"
+            android:layout_height="match_parent"
+            android:button="@null"
+            android:background="@drawable/home_seceted"
+            android:drawableTop="@mipmap/cart"
+            android:gravity="center"
+            android:textSize="23px"
+            android:text="购物车"
+            android:textColor="#fff"/>
+
+        <RadioButton
+            android:id="@+id/user"
+            android:layout_weight="1"
+            android:layout_width="118px"
+            android:layout_height="match_parent"
+            android:button="@null"
+            android:background="@drawable/home_seceted"
+            android:drawableTop="@mipmap/users"
+            android:gravity="center"
+            android:textSize="23px"
+            android:text="个人中心"
+            android:textColor="#fff"/>
+    </RadioGroup>
+
+</com.chenantao.autolayout.AutoLinearLayout>

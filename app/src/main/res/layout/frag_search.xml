@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.chenantao.autolayout.AutoLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="862px"
+    android:orientation="vertical"
+    app:layout_auto_baseheight="width"
+    app:layout_auto_basewidth="height">
+
+    <include layout="@layout/include_header_search"/>
+
+    <com.chenzhi.shop.ui.KeywordsFlow
+        android:id="@+id/keywordsflow"
+        android:layout_width="fill_parent"
+        android:layout_height="750px"/>
+
+    <Button
+        android:id="@+id/changed"
+        android:layout_width="wrap_content"
+        android:layout_height="60px"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20px"
+        android:textColor="#d82635"
+        android:background="@drawable/search_chaned_btn"
+        android:text="换一批"/>
+
+</com.chenantao.autolayout.AutoLinearLayout>

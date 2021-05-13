@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.chenantao.autolayout.AutoLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="862px"
+    android:orientation="vertical"
+    android:background="#EEEEEE"
+    app:layout_auto_baseheight="width"
+    app:layout_auto_basewidth="height">
+
+    <include
+        android:id="@+id/title_cart"
+        layout="@layout/include_header_title"/>
+
+    <com.chenantao.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="775px"
+        android:orientation="vertical">
+        <ListView
+            android:layout_weight="1"
+            android:id="@+id/list_cart"
+            android:layout_width="match_parent"
+            android:layout_height="780px">
+        </ListView>
+
+        <ImageView
+            android:id="@+id/cart_empty"
+            android:layout_marginTop="100px"
+            android:layout_width="300px"
+            android:layout_height="300px"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            android:src="@mipmap/ic_shopping_cart_empty"/>
+        <TextView
+            android:id="@+id/cart_empty_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="40px"
+            android:visibility="gone"
+            android:textSize="32px"
+            android:text="您还没有登录哦"/>
+    </com.chenantao.autolayout.AutoLinearLayout>
+
+    <include layout="@layout/foot_layout"/>
+
+</com.chenantao.autolayout.AutoLinearLayout>

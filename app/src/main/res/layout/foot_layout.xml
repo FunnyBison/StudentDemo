@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.chenantao.autolayout.AutoRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/id_rl_foot"
+    android:layout_width="match_parent"
+    android:layout_height="95px"
+    app:layout_auto_baseheight="width"
+    app:layout_auto_basewidth="height"
+    android:background="@android:color/white">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignParentTop="true"
+        android:background="#ccc"/>
+
+    <CheckBox
+        android:id="@+id/id_cb_select_all"
+        android:layout_width="wrap_content"
+        android:layout_height="40px"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20px"
+        android:background="@null"
+        android:textSize="24px"
+        android:text=" 全选"
+        android:button="@drawable/selector_check_bg"/>
+
+    <LinearLayout
+        android:id="@+id/id_ll_normal_all_state"
+        android:layout_width="wrap_content"
+        android:layout_height="95px"
+        android:layout_alignParentRight="true"
+        android:visibility="visible"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/id_tv_totalPrice"
+                android:layout_width="150px"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20px"
+                android:layout_marginTop="20px"
+                android:gravity="right"
+                android:text="合计：￥0"
+                android:textColor="#ff2600"
+                android:textSize="22px"/>
+
+            <TextView
+                android:id="@+id/tvPostPrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20px"
+                android:layout_marginTop="10px"
+                android:gravity="right"
+                android:text="不含运费"
+                android:textColor="#666666"
+                android:textSize="18px"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/id_tv_totalCount_jiesuan"
+            android:layout_width="130px"
+            android:layout_height="95px"
+            android:background="#ff5000"
+            android:gravity="center"
+            android:text="结算"
+            android:textColor="#FFF"
+            android:textSize="20px"/>
+    </LinearLayout>
+</com.chenantao.autolayout.AutoRelativeLayout>

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.chenantao.autolayout.AutoLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f6f2ed"
+
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+
+    app:layout_auto_baseheight="width"
+    app:layout_auto_basewidth="height">
+
+    <include layout="@layout/include_header_title"/>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40px"
+            android:layout_marginRight="15px"
+            android:layout_marginTop="45px">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="账户名：" />
+
+            <com.chenzhi.shop.ui.LoginEditText
+                android:id="@+id/regist_name"
+                android:layout_width="420px"
+                android:layout_height="66px"
+                android:layout_marginRight="15px"
+                android:layout_weight="1"
+                android:hint="请输入用户名"
+                android:background="@drawable/serchbutton_bg"
+                android:textSize="14sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40px"
+            android:layout_marginRight="15px"
+            android:layout_marginTop="45px" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="手机号：" />
+
+            <com.chenzhi.shop.ui.LoginEditText
+                android:id="@+id/regist_phone"
+                android:layout_width="420px"
+                android:layout_height="66px"
+                android:layout_marginRight="15px"
+                android:background="@drawable/serchbutton_bg"
+                android:layout_weight="1"
+                android:hint="请输入您的手机号"
+                android:textSize="14sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40px"
+            android:layout_marginRight="15px"
+            android:layout_marginTop="45px">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="密码：" />
+
+            <com.chenzhi.shop.ui.LoginEditText
+                android:id="@+id/regist_pwd"
+                android:layout_width="420px"
+                android:layout_height="66px"
+                android:layout_marginRight="15px"
+                android:background="@drawable/serchbutton_bg"
+                android:layout_weight="1"
+                app:mode="pwd"
+                android:hint="请输入密码"
+
+                android:inputType="textPassword"
+                android:textSize="14sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40px"
+            android:layout_marginRight="15px"
+            android:layout_marginTop="45px" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="确认密码：" />
+
+            <com.chenzhi.shop.ui.LoginEditText
+                android:id="@+id/regist_again_pwd"
+                android:background="@drawable/serchbutton_bg"
+                android:layout_width="420px"
+                android:layout_height="66px"
+                android:layout_marginRight="15px"
+                android:layout_weight="1"
+                app:mode="pwd"
+                android:hint="再输入一次密码"
+                android:inputType="textPassword"
+                android:textSize="14sp" />
+        </TableRow>
+
+
+        <CheckBox
+            android:id="@+id/regist_agree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="153px"
+            android:layout_marginTop="40px"
+            android:button="@drawable/auto_login_checkbok_selector"
+            android:text="同意,注册条款"
+            android:checked="true"
+            android:textColor="#555"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/regist_submit"
+            android:layout_width="245px"
+            android:layout_height="65px"
+            android:layout_marginLeft="150px"
+            android:layout_marginRight="190px"
+            android:layout_marginTop="40px"
+            android:background="@drawable/login_register_btn_selector"
+            android:text="注册" />
+    </TableLayout>
+
+
+
+</com.chenantao.autolayout.AutoLinearLayout>

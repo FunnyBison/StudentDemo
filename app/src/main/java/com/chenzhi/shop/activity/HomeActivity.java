@@ -26,6 +26,8 @@ public class HomeActivity extends MyAutoLayoutActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
+        //这是我修改的信息
+
         RadioGroup group = (RadioGroup) findViewById(R.id.group);
 
         //获取FragmentManager对象

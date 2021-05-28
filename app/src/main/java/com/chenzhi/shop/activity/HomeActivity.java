@@ -27,6 +27,7 @@ public class HomeActivity extends MyAutoLayoutActivity {
         setContentView(R.layout.activity_home);
 
         //这是我修改的信息
+        //这是第二次提交
 
         RadioGroup group = (RadioGroup) findViewById(R.id.group);
 

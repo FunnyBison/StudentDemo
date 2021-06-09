@@ -28,6 +28,7 @@ public class HomeActivity extends MyAutoLayoutActivity {
 
         //这是我修改的信息
         //柏亮嘎嘎嘎
+        //
 
         RadioGroup group = (RadioGroup) findViewById(R.id.group);
 

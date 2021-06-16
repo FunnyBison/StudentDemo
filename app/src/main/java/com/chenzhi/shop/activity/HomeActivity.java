@@ -28,7 +28,7 @@ public class HomeActivity extends MyAutoLayoutActivity {
 
         //这是我修改的信息
         //柏亮嘎嘎嘎
-        //
+        //的看法就不能到付件你就能不给进北京
 
         RadioGroup group = (RadioGroup) findViewById(R.id.group);
 
